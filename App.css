@@ -1,0 +1,444 @@
+ 
+
+ /* THIS IS NAVBAR STYLING   START NAVBAR STYLING */
+section#header {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section#header .main-nav {
+  height: 90px;
+}
+
+section#header .logo {
+  color: #000;
+  line-height: 90px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+   
+}
+
+section#header .nav-links {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+section#header .nav-links li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+section#header .nav-links li a {
+  color:#000;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s linear 0s;
+  /* text-transform: uppercase; */
+}
+
+section#header .nav-links li a:hover {
+  color: #7ebcb9;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #7ebcb9;
+}
+
+section#header li a.contact {
+  background-color: #0ad6e0;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+}
+
+section#header li a.contact:hover {
+  background-color: #08f0fd;
+  color:#000;
+  border-bottom: none;
+}
+
+section#header #check {
+  display: none;
+}
+
+section#header .menu-btn {
+  font-size: 25px;
+  color: #000;
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  section#header .nav-links {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #fafafa;
+  }
+
+  section#header .nav-links li {
+    display: block;
+  }
+
+  section#header .nav-links li a {
+    font-size: 16px;
+  }
+
+  section#header  .nav-links li a:hover {
+    border-bottom: none;
+  }
+
+  section#header .menu-btn {
+    display: block;
+  }
+
+  section#header #check:checked ~ .nav-links {
+    right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  section#header  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  section#header .menu-btn {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+  section#header  .menu-btn:focus {
+    color: blue;
+  }
+}
+
+
+/* END NAVBAR STYLING  */
+
+
+
+
+/* START HOME STYLING PART */
+
+
+
+
+section#home .head{
+  background-color: #c9c5c51a;
+  margin-bottom: 50px;
+  padding: 30px 0 20px 0;
+}
+
+section#home .head p{
+  color: #555;
+  margin-bottom: 10px;
+}
+
+ 
+section#home {
+
+margin-bottom: 50px;
+}
+section#home .container .card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+  }
+
+section#home .container .card-wrapper .card{
+   padding: 25px 25px 25px 25px;
+   background-color: #fff;
+   box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1), 0 4px 18px 0 rgba(0,0,0,0.15);
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+section#home .container .card-wrapper .card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 12px 50px 0 rgba(0,0,0,0.15);
+}
+section#home .container .card-wrapper .card .btn{
+ margin-top: 20px;
+ 
+}
+
+@media screen and (max-width: 900px){
+  section#home .container .card-wrapper{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px){
+  section#home .container .card-wrapper{
+      grid-template-columns: 1fr;
+  }
+}
+
+ 
+
+/* END HOME PART STYLING  */
+
+
+/* CONTEST STYLING PART START */
+
+
+
+
+section#online-test{
+  margin-bottom: 70px;
+  }
+  
+  
+  section#online-test .head{
+    background-color: #c9c5c51a;
+    margin-bottom: 50px;
+    padding: 30px 0 20px 0;
+  }
+  
+  section#online-test .head p{
+    color: #555;
+    margin-bottom: 10px;
+  }
+   
+  
+  section#online-test .container .card-wrapper .card{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    margin-bottom: 45px;
+    grid-column-gap: 20px;
+   padding:40px;
+   box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1), 0 4px 18px 0 rgba(0,0,0,0.15);
+   transition: all 0.3s ease;
+  }
+  section#online-test .container .card-wrapper .card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 12px 50px 0 rgba(0,0,0,0.15);
+  }
+  
+  section#online-test .container .card-wrapper .card .test-heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  section#online-test .container .card-wrapper .card .test-heading h1{
+    font-size: 25px;
+    color: #555;
+    transition: all 0.3s ease;
+  }
+  section#online-test .container .card-wrapper .card:hover .test-heading h1 {
+    color: #059c05;
+  }
+  
+  section#online-test .container .card-wrapper .card .test-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* align-items: center;
+    justify-content: center; */
+  }
+  
+  section#online-test .container .card-wrapper .card .test-content .number-que{
+  display: flex;
+  align-content: start;
+  justify-content: start;
+  }
+  section#online-test .container .card-wrapper .card .test-content  .number-que  i{
+    font-size: 15px ;
+    color: #555;
+    margin-top: 2px;
+    
+  }
+  section#online-test .container .card-wrapper .card .test-content  .number-que span{
+    margin: 0 10px;
+    font-size: 15px;
+    color: #555;
+  }
+  section#online-test .container .card-wrapper .card .test-content .btn a{
+    font-weight: 700;
+    color: #059c05;
+    font-family: monospace;
+  }
+  
+  
+  @media screen and (max-width: 900px){
+    section#online-test .container .card-wrapper .card{
+      grid-template-columns: 1fr;
+    }
+    section#online-test .container .card-wrapper .card .test-content{
+       margin-top: 30px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 600px){
+    section#online-test .container .card-wrapper .card{
+      grid-template-columns: 1fr;
+    }
+  
+    section#online-test .container .card-wrapper .card .test-content  .number-que{
+      margin-bottom: 30px;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    section#online-test .container .card-wrapper .card .test-content{
+      grid-template-columns: 1fr;
+    }
+  
+  }
+ 
+  
+  /* CONTEST STYLING PART END */
+
+
+
+
+  /* QUESTION CARD STYLING START */
+  section#question-card{
+    margin-top: 70px;
+}
+
+ 
+   
+  
+
+section#question-card .container .card-wrapper{
+    box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1), 0 4px 18px 0 rgba(0,0,0,0.15);
+    padding:5% 10%;
+    cursor: pointer;
+     
+}
+section#question-card .container .card-wrapper .question-card .question-name{
+    font: optional;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+section#question-card .container .card-wrapper .question-card .option-items{
+display: grid;
+grid-template-columns: 1fr;
+grid-row-gap: 20px;
+}
+section#question-card .container .card-wrapper .question-card .option-items .btn1{
+    text-align: left;
+    border-style: none;
+    font-size: 20px;
+   padding-left: 0px;
+   transition: all 0.3s ease;
+    
+}
+
+
+
+section#question-card .container .card-wrapper .question-card .option-items .btn1 span{
+    
+    border: 2px solid #555;
+    padding: 4px 9px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+ 
+.option_true{
+    color:#0ff00f;
+}
+
+ .option_false
+{
+    color: red;
+
+}   
+
+.next-wrapper{
+    
+  text-align: right;
+}
+.next{
+   
+   transform:translateY(120px);
+   font-size: 20px;
+   transition: all 0.3s ease;
+  opacity: 0;
+}
+.next-que{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 600px){
+  section#question-card .container .card-wrapper .question-card .question-name{
+    font-size: 17px;
+  }
+  section#question-card .container .card-wrapper .question-card .option-items .btn1{
+    font-size: 15px;
+  }
+
+  section#question-card .container .card-wrapper .question-card .option-items .btn1 span{
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 2px 6px;
+  }
+   
+}
+
+  /* QUESTION CARD STYLING END */
+
+
+
+  /*TEST SCORE CARD STYLING START */
+section#score-card .container .card-wrapper{
+
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px 20px 20px 20px;
+  margin-bottom: 40px;
+  
+
+}
+
+section#score-card .container .card-wrapper h1{
+  margin: 20px 0;
+  
+}
+ section#score-card .container .card-wrapper p{
+  margin: 10px 0;
+  font-size: 18px;
+} 
+section#score-card .container .card-wrapper .score{
+  color: #059c05;
+}
+
+@media screen and (max-width: 600px){
+   
+
+  section#score-card .container .card-wrapper h1{
+    font-size: 20px;
+  }
+  section#score-card .container .card-wrapper p{
+    font-size: 16px;
+  }
+
+  section#score-card .container .card-wrapper{
+    height: 420px;
+     
+  }
+}
+  /* TEST SCORE CARD STYLING END */
